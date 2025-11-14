@@ -9,7 +9,7 @@
     <H1>
         LOGIN HERE NOW !!!!
     </H1>
-
+<H1 style="color: red;">${error}</H1>
     <form method="post">
     name: <input type="text" name="name">
     password: <input type="password" name="password">

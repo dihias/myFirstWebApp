@@ -10,7 +10,6 @@
         welcome , you are logged in
     </H1>
     <h2> your name is ${name}</h2>
-    <h2> your password is ${password}</h2>
 
 
 </body>
