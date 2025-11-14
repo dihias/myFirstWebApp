@@ -7,13 +7,11 @@
 </head>
 <body>
     <H1>
-        LOGIN HERE NOW !!!!
+        welcome , you are logged in
     </H1>
+    <h2> your name is ${name}</h2>
+    <h2> your password is ${password}</h2>
 
-    <form method="post">
-    name: <input type="text" name="name">
-    password: <input type="password" name="password">
-    <input type="submit">
-    </form>
+
 </body>
 </html>
