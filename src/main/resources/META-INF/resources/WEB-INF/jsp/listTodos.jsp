@@ -6,6 +6,7 @@
     <title>list todos</title>
 </head>
 <body>
+<h1>Hey ${name}!!!</h1>
 <div>Your Todos are ${todos}</div>
 </body>
 </html>

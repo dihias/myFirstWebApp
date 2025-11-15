@@ -10,6 +10,7 @@
         welcome , you are logged in
     </H1>
     <h2> your name is ${name}</h2>
+    <div><a href="list-todos">Manage</a></div>
 
 
 </body>
