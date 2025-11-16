@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<div class="container">
     <H1>
         LOGIN HERE NOW !!!!
     </H1>
@@ -15,5 +16,6 @@
     password: <input type="password" name="password">
     <input type="submit">
     </form>
+    </div>
 </body>
 </html>
