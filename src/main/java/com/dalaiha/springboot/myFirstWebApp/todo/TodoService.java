@@ -27,6 +27,22 @@ static{
         todos.add(todo);
     }
 
+    public Todo findById(int id){
+        for (Todo todo : todos) {
+            if (todo.getId() == id) {
+                return todo;
+            }
+        }
+        return null;
+    }
+
+    public void updateTodo(int id,String username,String description,boolean done){
+        Todo todo= findById(id);
+        todo.setUsername(username);
+        todo.setDescription(description);
+        todo.setDone(done);
+    }
+
     public void deleteTodo(int id){
         //this is a " lambda expressions"
         Predicate<? super Todo> predicate=todo -> todo.getId() == id;
