@@ -28,12 +28,10 @@ static{
     }
 
     public Todo findById(int id){
-        for (Todo todo : todos) {
-            if (todo.getId() == id) {
-                return todo;
-            }
-        }
-        return null;
+    return todos.stream()
+            .filter(todo -> id == todo.getId())
+            .findFirst()
+            .orElse(null);
     }
 
     public void updateTodo(int id,String username,String description,boolean done){
