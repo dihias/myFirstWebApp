@@ -1,14 +1,6 @@
-<!-- jstl taglib -->
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list todos</title>
-    <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" >
-</head>
+<%@ include file="common/header.jspf" %>
 <body>
+<%@ include file="common/navigation.jspf" %>
 <div class="container">
 <h1>Hey ${name}!!!</h1>
 <div>Your Todos are</div>
@@ -39,8 +31,4 @@
     </tbody>
 </table>
 <a href="add-todo" class="btn btn-success">Add Todo</a>
-    <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
-    </div>
-</body>
-</html>
+<%@ include file="common/footer.jspf" %>

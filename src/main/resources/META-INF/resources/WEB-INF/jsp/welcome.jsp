@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
 <div class="container">
     <H1>
         welcome , you are logged in
     </H1>
-    <h2> your name is ${name}</h2>
-    <div><a href="list-todos">Manage</a></div>
-
-</div>
-</body>
-</html>
+    <h2 style="display:flex;padding:10px;"> your name is :<nav class="mb-3 btn btn-warning" style="color:green;padding:10px;margin-top:-10px;font-size:30px;" > ${name}<nav/></h2>
+    <div><a href="list-todos">Manage</a> your todos !</div>
+<%@ include file="common/footer.jspf" %>
