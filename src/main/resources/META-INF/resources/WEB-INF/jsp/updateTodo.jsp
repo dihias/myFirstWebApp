@@ -16,12 +16,17 @@
 <br>
 
 <form:form method="post" modelAttribute="todo">
-Descritpion: <form:input path="description" required="true"/>
-Username: <form:input path="username" required="true"/>
+Descritpion: <form:input path="description" required="true" class="mb-3"/>
 <form:errors path="description" cssClass="text-warning"/>
+<br/>
+Username: <form:input path="username" required="true" class="mb-3"/>
+<br/>
+Target date: <form:input path="targetDate" required="true" class="mb-3"/>
+<br/>
 <form:input type="hidden" path="id"  required="true"/>
-<form:input  path="done" required="true"/>
-<input type="submit" name="btn" class="btn btn-success" />
+done ? :<form:input  path="done" required="true" class="mb-3"/>
+<br/>
+<input type="submit" name="btn" class="btn btn-success" class="mb-3"/>
 </form:form>
     <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="webjars/jquery/3.6.0/jquery.min.js"></script>

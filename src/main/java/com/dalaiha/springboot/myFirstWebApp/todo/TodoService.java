@@ -34,11 +34,12 @@ static{
             .orElse(null);
     }
 
-    public void updateTodo(int id,String username,String description,boolean done){
-        Todo todo= findById(id);
-        todo.setUsername(username);
-        todo.setDescription(description);
-        todo.setDone(done);
+    public void updateTodo(Todo todo){
+        Todo todo1= findById(todo.getId());
+        todo1.setUsername(todo.getUsername());
+        todo1.setDescription(todo.getDescription());
+        todo1.setTargetDate(todo.getTargetDate());
+        todo1.setDone(todo.isDone());
     }
 
     public void deleteTodo(int id){

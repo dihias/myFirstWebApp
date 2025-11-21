@@ -15,7 +15,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>id</th>
+
             <th>description</th>
             <th>target date</th>
             <th>username</th>
@@ -27,7 +27,7 @@
     <tbody>
         <c:forEach items="${todos}" var="todo">
                 <tr>
-                    <th>${todo.id}</th>
+
                     <th>${todo.description}</th>
                     <th>${todo.targetDate}</th>
                     <th>${todo.username}</th>
