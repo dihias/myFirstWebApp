@@ -48,6 +48,8 @@ static{
         this.todos.removeIf(predicate);
     }
 public List<Todo> findByUsername(String username){
-    return todos;
+    Predicate<? super Todo> predicate=
+            todo -> todo.getUsername().equalsIgnoreCase(username);
+    return todos.stream().filter(predicate).toList();
 }
 }
