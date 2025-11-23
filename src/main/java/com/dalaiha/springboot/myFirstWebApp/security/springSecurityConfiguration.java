@@ -12,6 +12,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 import java.util.function.Function;
+import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 public class springSecurityConfiguration {
@@ -50,9 +51,14 @@ public class springSecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth.anyRequest().authenticated())
-                .formLogin(Customizer.withDefaults())
-                .httpBasic(Customizer.withDefaults());
+                .formLogin(withDefaults())
+                .httpBasic(withDefaults());
+
+        http.csrf(csrf -> csrf.disable());
+        http.headers(headers -> headers.frameOptions(frame -> frame.disable()));
 
         return http.build();
     }
+
+
 }
