@@ -11,15 +11,17 @@ import java.util.function.Predicate;
 @Service
 public class TodoService {
     private static List<Todo> todos= new ArrayList();
-    public static int todosCount = 3;
+    public static int todosCount = 4;
 static{
-    todos.add(new Todo(1,"didi","learn AWS",
+    todos.add(new Todo(1,"didi","learn Spring boot fast",
             LocalDate.now().plusYears(1),false));
 
-    todos.add(new Todo(2,"dididou","learn AWS now",
+    todos.add(new Todo(2,"momo","make a great meal for didi",
             LocalDate.now().plusMonths(8),false));
+    todos.add(new Todo(4,"momo","teach didi to cook fish and chips",
+            LocalDate.now(),false));
 
-    todos.add(new Todo(3,"didida","learn AWS hey",
+    todos.add(new Todo(3,"didi","learn AWS hey",
             LocalDate.now().plusWeeks(6),false));
 }
     public void addTodo( String username,String description, LocalDate targetDate, boolean done){
